@@ -1,6 +1,8 @@
 # openshift-cuda-timeslicing
 Steps to configure timeslicing CUDA pools on OpenShift
 
+- Scale down all pods that are using GPUs on a node that will be reconfigured. A node cannot be reconfigured while pods are still attached to the GPU devices.
+
 - Create the slicing configuration
 ```
 oc create -f time-slicing-config-map.yaml
