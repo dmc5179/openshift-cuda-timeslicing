@@ -54,3 +54,5 @@ Allocatable:
   nvidia.com/gpu: 16
   ...
 ```
+
+- Scale back up GPU pods
